@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+.board {
+    margin-top: 5rem;
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-rows: repeat(6, 1fr);
+    /* width: min(22rem, 100vw);
+    height: min(30rem, 100vh); */
+    gap: 0.3rem;
+}
+
+
+.board > * {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.3rem;
+    /* outline: solid; */
+    /* background-color: antiquewhite; */
+}
+
+.board > * > * {
+    background-color: blue;
+    max-height: 4rem;
+    max-width: 4rem;
+    min-height: 4rem;
+    min-width: 4rem;
+}
+
+
+
+
+
+
+
+
+
